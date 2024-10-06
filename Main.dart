@@ -29,7 +29,7 @@ void main() {
 }*/
 
 //prueba3
-class Car {
+/*class Car {
     String brand;
     String model;
     String color;
@@ -50,4 +50,21 @@ void main() {
     Car myCar = Car('Ford', 'Fiesta', 'Blanco', 2023, 200);
     myCar.accelerate();
     print('Mi coche es un ${myCar.brand} ${myCar.model} color ${myCar.color}.');
+}*/
+
+//prueba4
+void main() {
+    List<String> StephenKingBooks = ['Misery', '22/11/63', 'Ojos de Fuego'];
+
+    print('El primer libro de la lista es: ${StephenKingBooks[0]}');
+
+    StephenKingBooks.add('Carrie');
+
+    print('El último libro insertado en la lista es: 
+    ${StephenKingBooks[StephenKingBooks.length - 1]}');  
+
+    print('La lista completa de libros:');
+    for (String book in StephenKingBooks) {
+        print(book);
+    }
 }
