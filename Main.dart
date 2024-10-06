@@ -53,7 +53,7 @@ void main() {
 }*/
 
 //prueba4
-void main() {
+/*void main() {
     List<String> StephenKingBooks = ['Misery', '22/11/63', 'Ojos de Fuego'];
 
     print('El primer libro de la lista es: ${StephenKingBooks[0]}');
@@ -67,4 +67,33 @@ void main() {
     for (String book in StephenKingBooks) {
         print(book);
     }
+}*/
+
+//prueba5
+class Rectangle {
+    double width, height;
+
+    Rectangle(this.width, this.height);
+
+    Rectangle.square(double side) 
+        : width = side,
+            height = side;
+
+    double area() {
+        return width * height;
+    }
+    double perimeter() {
+        return 2 * (width + height);
+    }
+}
+
+void main() {
+    final firstRectangle = Rectangle(4.0, 5.0); 
+    final secondRectangle = Rectangle.square(3.0); 
+
+    print('Área del primer cuadrado: ${firstRectangle.area()}'); 
+    print('Perímetro del primer cuadrado: ${firstRectangle.perimeter()} \n'); 
+
+    print('Área del segundo cuadrado: ${secondRectangle.area()}');
+    print('Perímetro del segundo cuadrado: ${secondRectangle.perimeter()}');
 }
