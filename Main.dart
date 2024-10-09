@@ -70,7 +70,7 @@ void main() {
 }*/
 
 //prueba5
-class Rectangle {
+/*class Rectangle {
     double width, height;
 
     Rectangle(this.width, this.height);
@@ -96,4 +96,15 @@ void main() {
 
     print('Área del segundo cuadrado: ${secondRectangle.area()}');
     print('Perímetro del segundo cuadrado: ${secondRectangle.perimeter()}');
+}*/
+
+//prueba 6
+void main() {
+    double base = 10;
+    double altura = 5;
+
+    double area = (base * altura) / 2;
+
+    print('El área del triángulo con base $base y altura $altura es: $area');
 }
+
